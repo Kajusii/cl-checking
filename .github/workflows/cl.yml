@@ -19,3 +19,8 @@ jobs:
 
       - name: Run linter
         run: cd test-cl && bun run lint
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Code
+        run: cd test-cl && bun run build
